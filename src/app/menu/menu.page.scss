@@ -1,0 +1,14 @@
+.menu-container { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100%; 
+} 
+ 
+.menu-option { 
+    width: 200px; 
+    height: 125px; 
+    text-align: center; 
+    align-content: center; 
+}

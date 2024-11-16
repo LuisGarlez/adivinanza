@@ -1,0 +1,73 @@
+
+.custom-background {
+  background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2); 
+}
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.welcome-card {
+  border: 2px solid #ff5722; /* Naranja oscuro */
+  background: linear-gradient(145deg, #ffccbc, #ffab91); /* Fondo degradado naranja */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.card-title {
+  color: #bf360c; 
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  color: #d84315; 
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+
+.custom-input-item {
+  --highlight-color-focused: #ff6d00; 
+}
+
+.custom-label {
+  color: #ff7043; 
+}
+
+
+.login-button {
+  background-color: #ff7043; 
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+
+.login-button:hover {
+  background-color: #ff5722; 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.register-link {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.register-link-text {
+  color: #bf360c; 
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-link-text:hover {
+  text-decoration: underline;
+  color: #ff6d00; 
+}
