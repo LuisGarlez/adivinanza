@@ -1,0 +1,41 @@
+.custom-background {
+    background: linear-gradient(145deg, #4b0082, #8a2be2); 
+    color: #ffffff; 
+  }
+  
+  ion-list {
+    margin-top: 20px;
+  }
+  
+  .leaderboard-item {
+    background: linear-gradient(145deg, #6a0dad, #9a4cdb); 
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .leaderboard-rank {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .leaderboard-player-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .leaderboard-stats {
+    font-size: 1rem;
+    color: #f7f7f7;
+  }
+  
+  .leaderboard-score {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  

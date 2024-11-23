@@ -1,11 +1,63 @@
-.register-container { 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    height: 100%; 
-  } 
-   
-  .login-link { 
-    text-align: center; 
-    margin-top: 10px; 
-  }
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #000000; /* Fondo negro */
+}
+
+.welcome-card {
+  border: 2px solid hsl(179, 94%, 45%);
+  background: linear-gradient(145deg, #e00b0b, #c10fed);
+  box-shadow: 0 4px 6px rgba(31, 2, 2, 0.1);
+}
+
+.card-title {
+  color: #efefef;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  color: #f7f7f7;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.custom-input-item {
+  --highlight-color-focused: #ffffff;
+}
+
+.custom-label {
+  color: #ffffff;
+}
+
+.register-button {
+  background-color: #0588ed;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #040100;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-link-text {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link-text:hover {
+  text-decoration: underline;
+  color: #ff6d00;
+}

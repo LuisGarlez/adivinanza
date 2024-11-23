@@ -1,36 +1,40 @@
 <ion-header>
   <ion-toolbar mode="ios">
     <ion-buttons slot="start">
-      <ion-back-button default-href="/menu" text="volver"></ion-back-button>
+      <ion-back-button default-href="/menu" text="Volver"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
+<ion-content class="ion-padding custom-background">
   <div class="game-container">
     <!-- Tarjeta del juego -->
-    <ion-card mode="ios" color="warning">
+    <ion-card mode="ios" class="game-card">
       <ion-card-header class="ion-text-center">
-        <ion-card-title>Adivina el número</ion-card-title>
+        <ion-card-title class="game-card-title">Adivina el número</ion-card-title>
       </ion-card-header>
 
       <ion-card-content class="ion-text-center">
-        <p>¡Adivina un número entre 1 y 100!</p>
+        <p class="game-description">¡Adivina un número entre 1 y 100!</p>
 
-        <ion-item>
-          <ion-label position="floating">Tu intento</ion-label>
+        <ion-item class="custom-input-item">
+          <ion-label position="floating" class="custom-label">Tu intento</ion-label>
           <ion-input [(ngModel)]="numero" type="number"></ion-input>
         </ion-item>
 
-        <ion-button (click)="onClickAdivinar()" expand="block" color="warning">Adivinar</ion-button>
-        <ion-button (click)="onClickReiniciar()" color="medium" expand="block">Reiniciar Juego</ion-button>
+        <ion-button (click)="onClickAdivinar()" expand="block" class="game-button">
+          Adivinar
+        </ion-button>
+        <ion-button (click)="onClickReiniciar()" color="medium" expand="block">
+          Reiniciar Juego
+        </ion-button>
       </ion-card-content>
     </ion-card>
 
     <!-- Tarjeta de mensaje -->
-    <ion-card mode="ios" color="primary">
+    <ion-card mode="ios" class="message-card">
       <ion-card-header class="ion-text-center">
-        <ion-card-subtitle>Mensaje</ion-card-subtitle>
+        <ion-card-subtitle class="game-card-subtitle">Mensaje</ion-card-subtitle>
       </ion-card-header>
     </ion-card>
   </div>

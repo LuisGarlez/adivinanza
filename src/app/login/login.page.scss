@@ -1,6 +1,6 @@
 
 .custom-background {
-  background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2); 
+  background: linear-gradient(to bottom right, #000000, #c3cfe2); 
 }
 
 
@@ -13,36 +13,36 @@
 
 
 .welcome-card {
-  border: 2px solid #ff5722; /* Naranja oscuro */
-  background: linear-gradient(145deg, #ffccbc, #ffab91); /* Fondo degradado naranja */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border: 2px solid hsl(179, 94%, 45%); 
+  background: linear-gradient(145deg, #e00b0b, #c10fed); 
+  box-shadow: 0 4px 6px rgba(31, 2, 2, 0.1);
 }
 
 .card-title {
-  color: #bf360c; 
+  color: #efefef; 
   font-size: 1.8rem;
   font-weight: bold;
 }
 
 .card-subtitle {
-  color: #d84315; 
+  color: #f7f7f7; 
   font-size: 1.2rem;
   margin-top: 0.5rem;
 }
 
 
 .custom-input-item {
-  --highlight-color-focused: #ff6d00; 
+  --highlight-color-focused: #ffffff; 
 }
 
 .custom-label {
-  color: #ff7043; 
+  color: #ffffff; 
 }
 
 
 .login-button {
-  background-color: #ff7043; 
-  color: white;
+  background-color: #0588ed; 
+  color: rgb(255, 255, 255);
   font-weight: bold;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -51,7 +51,7 @@
 
 
 .login-button:hover {
-  background-color: #ff5722; 
+  background-color: #040100; 
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -62,7 +62,7 @@
 }
 
 .register-link-text {
-  color: #bf360c; 
+  color: #000000; 
   font-weight: bold;
   text-decoration: none;
 }

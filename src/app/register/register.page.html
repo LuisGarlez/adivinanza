@@ -1,46 +1,41 @@
 <ion-content class="ion-padding">
   <div class="register-container">
-
-    
-    <ion-card mode="ios" color="warning">
+    <ion-card mode="ios" class="welcome-card">
       <ion-card-header class="ion-text-center">
-        <ion-card-title>Registrate</ion-card-title>
-        <ion-card-subtitle>Adivina el numero</ion-card-subtitle>
+        <ion-card-title class="card-title">Regístrate</ion-card-title>
+        <ion-card-subtitle class="card-subtitle">Adivina el número</ion-card-subtitle>
       </ion-card-header>
 
       <ion-card-content>
         <form #frmRegistro="ngForm">
-          
-          <ion-item>
-            <ion-label position="floating">Usuario</ion-label>
+          <ion-item class="custom-input-item">
+            <ion-label position="floating" class="custom-label">Usuario</ion-label>
             <ion-input [(ngModel)]="usuario" type="text" name="username" required></ion-input>
           </ion-item>
 
-          
-          <ion-item>
-            <ion-label position="floating">Correo</ion-label>
+          <ion-item class="custom-input-item">
+            <ion-label position="floating" class="custom-label">Correo</ion-label>
             <ion-input [(ngModel)]="correo" type="email" name="email" required></ion-input>
           </ion-item>
 
-          
-          <ion-item>
-            <ion-label position="floating">Contraseña</ion-label>
+          <ion-item class="custom-input-item">
+            <ion-label position="floating" class="custom-label">Contraseña</ion-label>
             <ion-input [(ngModel)]="password" type="password" name="password" required></ion-input>
           </ion-item>
-          <br/>
-          
-          <ion-button (click)="onClickRegistrar(frmRegistro)" expand="block" color="warning">Registrarse</ion-button>
+          <br />
+
+          <ion-button (click)="onClickRegistrar(frmRegistro)" expand="block" class="register-button">
+            Registrarse
+          </ion-button>
         </form>
 
-        
         <div class="login-link">
           <ion-label>
             ¿Ya tienes una cuenta?
-            <a routerLink="/login">Inicia sesión aquí</a>
+            <a routerLink="/login" class="login-link-text">Inicia sesión aquí</a>
           </ion-label>
         </div>
       </ion-card-content>
     </ion-card>
-
   </div>
 </ion-content>

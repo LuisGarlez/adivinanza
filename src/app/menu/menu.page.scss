@@ -1,14 +1,51 @@
-.menu-container { 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    height: 100%; 
-} 
- 
-.menu-option { 
-    width: 200px; 
-    height: 125px; 
-    text-align: center; 
-    align-content: center; 
-}
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #000000; /* Fondo negro */
+  }
+  
+  .menu-option {
+    width: 80%;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-card-play {
+    background: linear-gradient(145deg, #e00b0b, #c10fed); /* Rojo a morado para "Jugar" */
+    border: 2px solid hsl(179, 94%, 45%);
+  }
+  
+  .menu-card-ranking {
+    background: linear-gradient(145deg, #005d7f, #3a99c2); /* Azul similar al de "Ranking" */
+    border: 2px solid hsl(179, 94%, 45%);
+  }
+  
+  .menu-card-exit {
+    background: linear-gradient(145deg, #0588ed, #040100); /* Azul oscuro a negro para "Salir" */
+    border: 2px solid hsl(179, 94%, 45%);
+  }
+  
+  .menu-card-title {
+    color: #efefef; /* Color blanco para los títulos */
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  
+  ion-text {
+    color: #ffffff; /* Color blanco para el texto */
+  }
+  
+  ion-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  ion-text ion-text {
+    color: #ffffff; /* Color blanco para el subtítulo */
+  }
+  
