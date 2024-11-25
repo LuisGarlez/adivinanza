@@ -17,25 +17,52 @@
       <ion-card-content class="ion-text-center">
         <p class="game-description">¡Adivina un número entre 1 y 100!</p>
 
+        <!-- Entrada con validación -->
         <ion-item class="custom-input-item">
           <ion-label position="floating" class="custom-label">Tu intento</ion-label>
-          <ion-input [(ngModel)]="numero" type="number"></ion-input>
+          <ion-input 
+            [(ngModel)]="numero" 
+            type="number" 
+            (ionBlur)="validarNumero()" 
+            [disabled]="bloquearInput">
+          </ion-input>
         </ion-item>
 
-        <ion-button (click)="onClickAdivinar()" expand="block" class="game-button">
+        <!-- Mensaje de error -->
+        <ion-text color="danger" *ngIf="mensajeError">
+          <p>{{ mensajeError }}</p>
+        </ion-text>
+
+        <!-- Botones -->
+        <ion-button 
+          (click)="onClickAdivinar()" 
+          expand="block" 
+          class="game-button" 
+          [disabled]="bloquearInput || !numero">
           Adivinar
         </ion-button>
-        <ion-button (click)="onClickReiniciar()" color="medium" expand="block">
+        <ion-button 
+          (click)="onClickReiniciar()" 
+          color="medium" 
+          expand="block">
           Reiniciar Juego
         </ion-button>
       </ion-card-content>
     </ion-card>
 
     <!-- Tarjeta de mensaje -->
-    <ion-card mode="ios" class="message-card">
+    <ion-card mode="ios" class="message-card" *ngIf="mensaje">
       <ion-card-header class="ion-text-center">
         <ion-card-subtitle class="game-card-subtitle">Mensaje</ion-card-subtitle>
       </ion-card-header>
+      <ion-card-content>
+        <p>{{ mensaje }}</p>
+      </ion-card-content>
     </ion-card>
+
+    <!-- Indicador de intentos restantes -->
+    <ion-text color="medium" *ngIf="intentosRestantes >= 0">
+      <p>Intentos restantes: {{ intentosRestantes }}</p>
+    </ion-text>
   </div>
 </ion-content>

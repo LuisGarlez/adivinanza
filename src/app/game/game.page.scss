@@ -1,67 +1,66 @@
 .custom-background {
-    background-color: #000000; /* Fondo negro */
-  }
-  
-  .game-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  .game-card {
-    width: 80%;
-    margin: 10px 0;
-    background: linear-gradient(145deg, #e00b0b, #c10fed); /* Rojo a morado */
-    border: 2px solid hsl(179, 94%, 45%);
-    box-shadow: 0 4px 6px rgba(31, 2, 2, 0.1);
-  }
-  
-  .game-card-title {
-    color: #efefef;
-    font-weight: bold;
-    font-size: 1.6rem;
-  }
-  
-  .game-description {
-    color: #efefef;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-  }
-  
-  .custom-input-item {
-    --highlight-color-focused: #ffffff;
-  }
-  
-  .custom-label {
-    color: #ffffff;
-  }
-  
-  .game-button {
-    background-color: #0588ed;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-  }
-  
-  .game-button:hover {
-    background-color: #040100;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  }
-  
-  .message-card {
-    width: 80%;
-    margin-top: 20px;
-    background: linear-gradient(145deg, #005d7f, #3a99c2); /* Azul a azul claro */
-    border: 2px solid hsl(179, 94%, 45%);
-  }
-  
-  .game-card-subtitle {
-    color: #f7f7f7;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
+  background-color: #000000; /* Fondo negro */
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.game-card {
+  width: 80%;
+  margin: 10px 0;
+  background: linear-gradient(145deg, #e00b0b, #c10fed); /* Rojo a morado */
+  border: 2px solid hsl(179, 94%, 45%);
+  box-shadow: 0 4px 6px rgba(31, 2, 2, 0.1);
+}
+
+.game-card-title {
+  color: #efefef;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.game-description {
+  color: #efefef;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.custom-input-item {
+  --highlight-color-focused: #ffffff;
+}
+
+.custom-label {
+  color: #ffffff;
+}
+
+.game-button {
+  background-color: #0588ed;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.game-button:hover {
+  background-color: #040100;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.message-card {
+  width: 80%;
+  margin-top: 20px;
+  background: linear-gradient(145deg, #005d7f, #3a99c2); /* Azul a azul claro */
+  border: 2px solid hsl(179, 94%, 45%);
+}
+
+.game-card-subtitle {
+  color: #f7f7f7;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

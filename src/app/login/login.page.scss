@@ -3,14 +3,12 @@
   background: linear-gradient(to bottom right, #000000, #c3cfe2); 
 }
 
-
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-
 
 .welcome-card {
   border: 2px solid hsl(179, 94%, 45%); 
@@ -30,7 +28,6 @@
   margin-top: 0.5rem;
 }
 
-
 .custom-input-item {
   --highlight-color-focused: #ffffff; 
 }
@@ -38,7 +35,6 @@
 .custom-label {
   color: #ffffff; 
 }
-
 
 .login-button {
   background-color: #0588ed; 
@@ -49,12 +45,10 @@
   transition: background-color 0.3s ease;
 }
 
-
 .login-button:hover {
   background-color: #040100; 
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
-
 
 .register-link {
   margin-top: 1rem;
@@ -70,4 +64,17 @@
 .register-link-text:hover {
   text-decoration: underline;
   color: #ff6d00; 
+}
+
+/* Nueva clase para el mensaje de feedback */
+.feedback-message {
+  color: #000000; /* Texto negro */
+  font-size: 14px; /* Tamaño legible */
+  font-weight: bold; /* Destacar mensaje */
+  margin-bottom: 10px; /* Espaciado inferior */
+  text-align: center; /* Centrado horizontal */
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para contraste */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }

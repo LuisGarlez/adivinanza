@@ -8,33 +8,56 @@
 
       <ion-card-content>
         <form #frmRegistro="ngForm">
-          <ion-item class="custom-input-item">
+          <!-- Campo Usuario -->
+          <ion-item class="custom-input-item" [class.invalid]="frmRegistro.controls['username']?.invalid && frmRegistro.controls['username']?.touched">
             <ion-label position="floating" class="custom-label">Usuario</ion-label>
             <ion-input [(ngModel)]="usuario" type="text" name="username" required></ion-input>
           </ion-item>
+          <ion-text color="danger" *ngIf="frmRegistro.controls['username']?.invalid && frmRegistro.controls['username']?.touched">
+            <p>El usuario es requerido.</p>
+          </ion-text>
 
-          <ion-item class="custom-input-item">
+          <!-- Campo Correo -->
+          <ion-item class="custom-input-item" [class.invalid]="frmRegistro.controls['email']?.invalid && frmRegistro.controls['email']?.touched">
             <ion-label position="floating" class="custom-label">Correo</ion-label>
             <ion-input [(ngModel)]="correo" type="email" name="email" required></ion-input>
           </ion-item>
+          <ion-text color="danger" *ngIf="frmRegistro.controls['email']?.invalid && frmRegistro.controls['email']?.touched">
+            <p>Ingresa un correo válido.</p>
+          </ion-text>
 
-          <ion-item class="custom-input-item">
+          <!-- Campo Contraseña -->
+          <ion-item class="custom-input-item" [class.invalid]="frmRegistro.controls['password']?.invalid && frmRegistro.controls['password']?.touched">
             <ion-label position="floating" class="custom-label">Contraseña</ion-label>
             <ion-input [(ngModel)]="password" type="password" name="password" required></ion-input>
           </ion-item>
+          <ion-text color="danger" *ngIf="frmRegistro.controls['password']?.invalid && frmRegistro.controls['password']?.touched">
+            <p>La contraseña es requerida.</p>
+          </ion-text>
+
           <br />
 
-          <ion-button (click)="onClickRegistrar(frmRegistro)" expand="block" class="register-button">
+          <!-- Botón de Registro -->
+          <ion-button (click)="onClickRegistrar(frmRegistro)" expand="block" class="register-button" [disabled]="frmRegistro.invalid">
             Registrarse
           </ion-button>
         </form>
 
+        <!-- Enlace a Login -->
         <div class="login-link">
           <ion-label>
             ¿Ya tienes una cuenta?
             <a routerLink="/login" class="login-link-text">Inicia sesión aquí</a>
           </ion-label>
         </div>
+
+        <!-- Mensaje de éxito o error -->
+        <ion-text color="success" *ngIf="registroExitoso">
+          <p>Registro exitoso. Redirigiendo...</p>
+        </ion-text>
+        <ion-text color="danger" *ngIf="mensajeError">
+          <p>{{ mensajeError }}</p>
+        </ion-text>
       </ion-card-content>
     </ion-card>
   </div>

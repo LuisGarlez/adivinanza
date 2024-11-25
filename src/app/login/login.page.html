@@ -1,6 +1,5 @@
 <ion-content class="ion-padding custom-background">
   <div class="login-container">
-   
     <ion-card mode="ios" class="welcome-card">
       <ion-card-header class="ion-text-center">
         <ion-card-title class="card-title">Bienvenido</ion-card-title>
@@ -9,29 +8,34 @@
 
       <ion-card-content>
         <form #frmLogin="ngForm">
-          
+          <!-- Mensaje de Feedback -->
+          <ion-text *ngIf="mensajeError" class="feedback-message">{{ mensajeError }}</ion-text>
+          <ion-text *ngIf="loginExitoso" class="feedback-message">¡Inicio de sesión exitoso! Redirigiendo...</ion-text>
+          <br />
+
+          <!-- Campo Usuario -->
           <ion-item class="custom-input-item">
             <ion-label position="floating" class="custom-label">Usuario</ion-label>
             <ion-input [(ngModel)]="usuario" type="text" name="username" required></ion-input>
           </ion-item>
 
-          
+          <!-- Campo Contraseña -->
           <ion-item class="custom-input-item">
             <ion-label position="floating" class="custom-label">Contraseña</ion-label>
             <ion-input [(ngModel)]="password" type="password" name="password" required></ion-input>
           </ion-item>
-          <br/>
+          <br />
 
-          
+          <!-- Botón Ingresar -->
           <ion-button (click)="onClickIngresar(frmLogin)" expand="block" class="login-button">
             Ingresar
           </ion-button>
         </form>
 
-        
+        <!-- Enlace a Registro -->
         <div class="register-link">
           <ion-label>
-            ¿No tienes cuenta? 
+            ¿No tienes cuenta?
             <a routerLink="/register" class="register-link-text">Regístrate aquí</a>
           </ion-label>
         </div>
